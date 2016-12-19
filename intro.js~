@@ -11,14 +11,6 @@ var resetHeader = function() {
     h.innerHTML = "Hello World!";
 }
 
-var factorial = function(n) {
-    if ( n < 2 ){
-	return n;
-    }else{
-	return n * factorial(n - 1);
-    }
-}
-
 var b = document.getElementById( 'b' );
 b.addEventListener('click',
                    function() {
@@ -49,15 +41,6 @@ b2.addEventListener('click',
                         }else{
                             elem.innerHTML = parseInt(list.childNodes[list.childNodes.length-1].innerHTML) + parseInt(list.childNodes[list.childNodes.length-2].innerHTML );
                         }
-                        list.appendChild( elem );
-                    });
-
-var b3 = document.getElementById('b3');
-b3.addEventListener('click',
-                    function() {
-                        var list = document.getElementById('factlist');
-                        var elem = document.createElement('li');
-                        elem.innerHTML = factorial(list.childNodes.length);
                         list.appendChild( elem );
                     });
 

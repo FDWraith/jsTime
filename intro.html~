@@ -32,13 +32,6 @@
 
     <ol id="fiblist">
     </ol>
-
-    <hr>
-
-    <button id="b3">Third Button</button>
-
-    <ol id="factlist">
-    </ol>
     
     <script src="intro.js"></script>
   </body>
